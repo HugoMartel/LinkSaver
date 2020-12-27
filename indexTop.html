@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Saver</title>
+    <!--link rel="stylesheet" href="style.css" type="text/css" /-->
+    <style>
+        a.link {
+            margin-right: 50px;
+            color: black;
+        }
+        
+        a.link:visited {
+            color: black;
+        }
+        
+        form.link-form {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Link Saver !
+        </h1>
+        <h5>
+            Just add a link in the input and press a the <em>ADD</em> button to submit it!
+        </h5>
+    </header>
+
+    <main>
+        <form action="" method="GET">
+            <input name="title" aria-label="a new title" type="text" maxlength="100" placeholder="Title" />
+            <input name="link" aria-label="a new link" type="text" maxlength="1000" placeholder="Page link" />
+            <button type="submit" id="add-link">ADD</button>
+        </form>
+
+        <section>
+            <ul id="links">
